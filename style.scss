@@ -1,0 +1,289 @@
+
+@import "bootstrap-4.4.1/scss/bootstrap-grid.scss";
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Aleo:300,300i,400,400i,700,700i&display=swap');
+
+$fond-Aleo: 'Aleo', serif;
+$fond-Josefin: "Josefin Sans", sans-serif;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+.borG {border: 1px solid green;}
+.borR {border: 2px solid red;}
+
+.header 
+{
+    background-image: url(img/headerBG.png);
+        background-size: cover;
+    background-position: center;
+    &__indents
+    {
+        padding-top: 278px;
+        padding-bottom: 52px;
+        @include media-breakpoint-down(md) {
+            padding-top: 200px;
+            padding-bottom: 40px;
+        }
+    }
+    &__input 
+    {
+        background: white;
+        height: 60px;
+        width: 73%;
+        padding-right: 0;
+        position: relative;
+        border: 2px solid white;
+                 
+    }
+  
+
+}
+
+input::placeholder {
+    font-size: 14px;
+    font-family: 'Josefin Sans', sans-serif;
+    color: rgba(153, 153, 153, 0.705);
+    line-height: 1.857;
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 2px;
+    
+  }
+  
+
+
+
+
+.MIKEon {
+    font-size: 48px;
+    font-family: 'Josefin Sans', sans-serif;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 0.542;
+    text-align: center;
+    letter-spacing: 3px;
+    &--middle {
+        font-size: 24px;
+        font-family: 'Josefin Sans', sans-serif;
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        text-transform: uppercase;
+        line-height: 1.083;
+        text-align: left;           
+      }
+      
+  }
+  .Safe_Travel_Anywhere {
+    font-size: 22px;
+    font-family: 'Josefin Sans', sans-serif;
+    color: rgb(255, 255, 255);
+    line-height: 1;
+    text-align: center;
+    letter-spacing: 4.8px;    
+    font-weight: 300;    
+    padding-top: 20px;
+  }
+  
+.position 
+{position: relative;
+&__img{
+    position: absolute;
+    right: 5px;
+    bottom: 3px;
+    @include media-breakpoint-down(lg) {
+       right: 0;
+    }
+
+}}
+
+// button ------------------------------------------------------
+.button {
+    font-size: 14px;
+    font-family: 'Aleo', serif;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    line-height: 1.7;
+    text-align: center;
+    letter-spacing: 1px;
+    background: #5474fd;
+    height: 60px;
+    font-weight: 400;
+    padding-left: 0;
+    width: 225px;
+    &--first
+    {
+        
+        border: 2px solid white;
+        width: 27%;
+        position: absolute;
+        right: 15px;
+        top: 0px;    
+    }
+    // &--padding 
+    // {margin-bottom: 50px;
+    //  }
+
+
+}
+    // button --------------------------------------------
+
+
+
+
+
+
+.scroll_down {
+    // display: flex;
+    // justify-content: center;
+    // flex-direction: column;
+
+
+    padding-top: 122px;
+    padding-bottom: 134px;
+    @include media-breakpoint-down(md) {
+    padding-top: 80px;
+    padding-bottom: 80px;       
+            }
+
+
+
+    &__text {
+        font-size: 14px;
+        font-family: 'Josefin Sans', sans-serif;
+        color: rgb(255, 255, 255);
+        line-height: 1.857;
+        text-align: center;
+        font-weight: 300;
+        letter-spacing: 2px; 
+        
+
+          
+    
+    }
+    &__img {
+     
+       text-align: center;
+       color: rgba(255, 255, 255, 0.801);
+       font-size: 20px;
+
+
+
+       
+    }
+      
+}
+
+// <!-- ------------------------------------ НАВІГАЦІЯ  -->
+
+.navbg {
+    background: #5474fd;
+}
+
+.nav{
+height: 80px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 0;
+    &__list
+    {
+        display: flex;
+        justify-content: space-around;
+    }
+    &__link
+    {
+
+        font-size: 14px;
+        font-family: 'Aleo', serif;
+        font-weight: 400;
+        color: rgb(255, 255, 255);
+        text-transform: uppercase;
+        line-height: 1.857;
+        text-decoration: none;
+    }
+}
+
+li {
+    list-style-type: none;
+    padding-left: 30px;
+         
+}
+
+// <!-- Why Choose Us  ---------------------------------->
+
+.ChooseBg{
+    background-image: url(img/ChooseBG.png);
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    position: relative;
+}
+.NOpad{padding: 0;}
+
+.backgroundIMG {
+    background-image: url(img/choose1.png);
+    width: 350px;
+    height: 220px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: right;
+    background-size: contain;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    right: 0;
+    bottom: 180px;
+    z-index: 1;
+}
+
+
+
+.choose
+{
+    display: block;
+    padding-top: 205px;
+    padding-bottom: 133px;
+    float: left;
+    width: 48%;
+    z-index: 800;
+    
+
+    &__title{
+        font-size: 36px;
+        font-family: $fond-Aleo;
+        color: rgb(255, 255, 255);
+        line-height: 1;
+        padding-top: 200px;
+        z-index: 5;
+    }
+    &__sub_title {
+       
+            font-size: 16px;
+            font-family: $fond-Josefin;
+            color: rgb(232, 232, 232);
+            line-height: 1.625;
+            text-align: left;
+            padding-top: 70px;
+            z-index: 5;
+            &--pad    {padding-top: 37px;
+                padding-bottom: 50px;} 
+    }
+    // &--right{
+    //     width: 45%;
+    // }
+    // &__img { 
+    //     padding-top: 80px;
+    // padding-left: 50px;}
+    // &__img2 
+    // {padding-left: 150px;}
+
+}
+
+
