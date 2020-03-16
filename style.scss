@@ -1,289 +1,481 @@
-
 @import "bootstrap-4.4.1/scss/bootstrap-grid.scss";
-@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Aleo:300,300i,400,400i,700,700i&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Aleo:300,300i,400,400i,700,700i&display=swap");
 
-$fond-Aleo: 'Aleo', serif;
+$fond-Aleo: "Aleo", serif;
 $fond-Josefin: "Josefin Sans", sans-serif;
 
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
+.borG {
+  border: 1px solid green;
+}
+.borR {
+  border: 2px solid red;
+}
 
-
-
-.borG {border: 1px solid green;}
-.borR {border: 2px solid red;}
-
-.header 
-{
-    background-image: url(img/headerBG.png);
-        background-size: cover;
-    background-position: center;
-    &__indents
-    {
-        padding-top: 278px;
-        padding-bottom: 52px;
-        @include media-breakpoint-down(md) {
-            padding-top: 200px;
-            padding-bottom: 40px;
-        }
+.header {
+  background-image: url(img/headerBG.png);
+  background-size: cover;
+  background-position: center;
+  &__indents {
+    padding-top: 278px;
+    padding-bottom: 52px;
+    @include media-breakpoint-down(md) {
+      padding-top: 200px;
+      padding-bottom: 40px;
     }
-    &__input 
-    {
-        background: white;
-        height: 60px;
-        width: 73%;
-        padding-right: 0;
-        position: relative;
-        border: 2px solid white;
-                 
-    }
-  
-
+  }
+  &__input {
+    background: white;
+    height: 60px;
+    width: 73%;
+    padding-right: 0;
+    position: relative;
+    border: 2px solid white;
+  }
 }
 
 input::placeholder {
-    font-size: 14px;
-    font-family: 'Josefin Sans', sans-serif;
-    color: rgba(153, 153, 153, 0.705);
-    line-height: 1.857;
-    text-align: center;
-    font-weight: 400;
-    letter-spacing: 2px;
-    
-  }
-  
-
-
-
+  font-size: 14px;
+  font-family: "Josefin Sans", sans-serif;
+  color: rgba(153, 153, 153, 0.705);
+  line-height: 1.857;
+  text-align: center;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
 
 .MIKEon {
-    font-size: 48px;
-    font-family: 'Josefin Sans', sans-serif;
+  font-size: 48px;
+  font-family: "Josefin Sans", sans-serif;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 0.542;
+  text-align: center;
+  letter-spacing: 3px;
+  &--middle {
+    font-size: 24px;
+    font-family: "Josefin Sans", sans-serif;
     color: rgb(255, 255, 255);
-    font-weight: 700;
+    font-weight: bold;
     text-transform: uppercase;
-    line-height: 0.542;
-    text-align: center;
-    letter-spacing: 3px;
-    &--middle {
-        font-size: 24px;
-        font-family: 'Josefin Sans', sans-serif;
-        color: rgb(255, 255, 255);
-        font-weight: bold;
-        text-transform: uppercase;
-        line-height: 1.083;
-        text-align: left;           
-      }
-      
+    line-height: 1.083;
+    text-align: left;
   }
-  .Safe_Travel_Anywhere {
-    font-size: 22px;
-    font-family: 'Josefin Sans', sans-serif;
-    color: rgb(255, 255, 255);
-    line-height: 1;
-    text-align: center;
-    letter-spacing: 4.8px;    
-    font-weight: 300;    
-    padding-top: 20px;
-  }
-  
-.position 
-{position: relative;
-&__img{
+}
+.Safe_Travel_Anywhere {
+  font-size: 22px;
+  font-family: "Josefin Sans", sans-serif;
+  color: rgb(255, 255, 255);
+  line-height: 1;
+  text-align: center;
+  letter-spacing: 4.8px;
+  font-weight: 300;
+  padding-top: 20px;
+}
+
+.position {
+  position: relative;
+  &__img {
     position: absolute;
     right: 5px;
     bottom: 3px;
     @include media-breakpoint-down(lg) {
-       right: 0;
+      right: 0;
     }
-
-}}
+  }
+}
 
 // button ------------------------------------------------------
 .button {
-    font-size: 14px;
-    font-family: 'Aleo', serif;
-    color: rgb(255, 255, 255);
-    text-transform: uppercase;
-    line-height: 1.7;
-    text-align: center;
-    letter-spacing: 1px;
-    background: #5474fd;
-    height: 60px;
-    font-weight: 400;
-    padding-left: 0;
-    width: 225px;
-    &--first
-    {
-        
-        border: 2px solid white;
-        width: 27%;
-        position: absolute;
-        right: 15px;
-        top: 0px;    
-    }
-    // &--padding 
-    // {margin-bottom: 50px;
-    //  }
-
-
+  font-size: 14px;
+  font-family: "Aleo", serif;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  line-height: 1.7;
+  text-align: center;
+  letter-spacing: 1px;
+  background: #5474fd;
+  height: 60px;
+  font-weight: 400;
+  padding-left: 0;
+  width: 225px;
+  &--first {
+    border: 2px solid white;
+    width: 27%;
+    position: absolute;
+    right: 15px;
+    top: 0px;
+  }
+  // &--padding
+  // {margin-bottom: 50px;
+  //  }
 }
-    // button --------------------------------------------
-
-
-
-
-
+// button --------------------------------------------
 
 .scroll_down {
-    // display: flex;
-    // justify-content: center;
-    // flex-direction: column;
+  // display: flex;
+  // justify-content: center;
+  // flex-direction: column;
 
-
-    padding-top: 122px;
-    padding-bottom: 134px;
-    @include media-breakpoint-down(md) {
+  padding-top: 122px;
+  padding-bottom: 134px;
+  @include media-breakpoint-down(md) {
     padding-top: 80px;
-    padding-bottom: 80px;       
-            }
+    padding-bottom: 80px;
+  }
 
-
-
-    &__text {
-        font-size: 14px;
-        font-family: 'Josefin Sans', sans-serif;
-        color: rgb(255, 255, 255);
-        line-height: 1.857;
-        text-align: center;
-        font-weight: 300;
-        letter-spacing: 2px; 
-        
-
-          
-    
-    }
-    &__img {
-     
-       text-align: center;
-       color: rgba(255, 255, 255, 0.801);
-       font-size: 20px;
-
-
-
-       
-    }
-      
+  &__text {
+    font-size: 14px;
+    font-family: "Josefin Sans", sans-serif;
+    color: rgb(255, 255, 255);
+    line-height: 1.857;
+    text-align: center;
+    font-weight: 300;
+    letter-spacing: 2px;
+  }
+  &__img {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.801);
+    font-size: 20px;
+  }
 }
 
 // <!-- ------------------------------------ НАВІГАЦІЯ  -->
 
 .navbg {
-    background: #5474fd;
+  background: #5474fd;
 }
 
-.nav{
-height: 80px;
-display: flex;
-justify-content: space-between;
-align-items: center;
-padding: 0;
-    &__list
-    {
-        display: flex;
-        justify-content: space-around;
-    }
-    &__link
-    {
+.nav {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  // &__menu {
+  //   position: sticky;
+  // }
 
-        font-size: 14px;
-        font-family: 'Aleo', serif;
-        font-weight: 400;
-        color: rgb(255, 255, 255);
-        text-transform: uppercase;
-        line-height: 1.857;
-        text-decoration: none;
-    }
+  &__list {
+    display: flex;
+    justify-content: space-around;
+  }
+  &__link {
+    font-size: 14px;
+    font-family: "Aleo", serif;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    line-height: 1.857;
+    text-decoration: none;
+  }
 }
 
 li {
-    list-style-type: none;
-    padding-left: 30px;
-         
+  list-style-type: none;
+  padding-left: 30px;
 }
 
 // <!-- Why Choose Us  ---------------------------------->
 
-.ChooseBg{
-    background-image: url(img/ChooseBG.png);
-    background-size: cover;
-    background-position: center;
-    height: 70vh;
-    position: relative;
+.ChooseBg {
+  background-image: url(img/ChooseBG.png);
+  background-size: cover;
+  background-position: center;
 }
-.NOpad{padding: 0;}
+// .NOpad{padding: 0;}
 
-.backgroundIMG {
-    background-image: url(img/choose1.png);
-    width: 350px;
-    height: 220px;
-    background-repeat: no-repeat;
-    background-position-y: center;
-    background-position-x: right;
-    background-size: contain;
-    position: absolute;
-    top: 100px;
-    left: 0;
-    right: 0;
-    bottom: 180px;
-    z-index: 1;
-}
+// .backgroundIMG {
+//     background-image: url(img/choose1.png);
+//     width: 350px;
+//     height: 220px;
+//     background-repeat: no-repeat;
+//     background-position-y: center;
+//     background-position-x: right;
+//     background-size: contain;
+//     position: absolute;
+//     top: 100px;
+//     left: 0;
+//     right: 0;
+//     bottom: 180px;
+//     z-index: 1;
+// }
 
+.choose {
+  padding-top: 205px;
+  padding-bottom: 133px;
+  @include media-breakpoint-down(md) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
 
+  // width: 48%;
+  // z-index: 800;
 
-.choose
-{
-    display: block;
-    padding-top: 205px;
-    padding-bottom: 133px;
-    float: left;
-    width: 48%;
-    z-index: 800;
-    
-
-    &__title{
-        font-size: 36px;
-        font-family: $fond-Aleo;
-        color: rgb(255, 255, 255);
-        line-height: 1;
-        padding-top: 200px;
-        z-index: 5;
+  &__title {
+    font-size: 36px;
+    font-family: $fond-Aleo;
+    color: rgb(255, 255, 255);
+    line-height: 1;
+    padding-top: 200px;
+    z-index: 5;
+  }
+  &__sub_title {
+    font-size: 16px;
+    font-family: $fond-Josefin;
+    color: rgb(232, 232, 232);
+    line-height: 1.625;
+    text-align: left;
+    padding-top: 70px;
+    z-index: 5;
+    &--pad {
+      padding-top: 37px;
+      padding-bottom: 25px;
     }
-    &__sub_title {
-       
-            font-size: 16px;
-            font-family: $fond-Josefin;
-            color: rgb(232, 232, 232);
-            line-height: 1.625;
-            text-align: left;
-            padding-top: 70px;
-            z-index: 5;
-            &--pad    {padding-top: 37px;
-                padding-bottom: 50px;} 
+  }
+
+  &__img {
+    padding-top: 120px;
+    padding-left: 50px;
+    @include media-breakpoint-down(lg) {
+      padding-left: 0px;
     }
-    // &--right{
-    //     width: 45%;
+    @include media-breakpoint-down(md) {
+      padding-top: 0px;
+    }
+    // @include media-breakpoint-down(mb) {
+    //   padding-left: 0px;
     // }
-    // &__img { 
-    //     padding-top: 80px;
-    // padding-left: 50px;}
-    // &__img2 
-    // {padding-left: 150px;}
+    // @include media-breakpoint-down(sm) {
+    //   padding-top: 0px;
+    // }
+  }
 
+  &__img2 {
+    padding-left: 180px;
+    @include media-breakpoint-down(lg) {
+      padding-left: 20px;
+    }
+    // @include media-breakpoint-down(mb) {
+    //   padding-left: 0px;
+    // }
+    // @include media-breakpoint-down(sm) {
+    //   padding-top: 0px;
+    // }
+  }
+}
+// <!-- середина - прямокутник - RECTANGLE ---------------------->
+
+.rectangle {
+  background: #333333;
+  color: white;
+  &__main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
 }
 
+.rectangle_box {
+  text-align: center;
+  padding-top: 98px;
+  padding-bottom: 122px;
+  @include media-breakpoint-down(md) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
 
+  &__img {
+    position: relative;
+    width: 58px;
+    height: 57px;
+    z-index: 5;
+  }
+  &__text {
+    font-size: 36px;
+    font-family: $fond-Aleo;
+    color: rgb(232, 232, 232);
+    line-height: 0.722;
+    text-align: center;
+    font-weight: 400;
+    padding-top: 32px;
+  }
+}
+
+.position {
+  position: relative;
+}
+
+// Херня получається
+
+// .shap {
+//   // background-image: url(img/Shape.png);
+//   position: absolute;
+//   width: 773px;
+//   height: 94px;
+//   // background-position-x: 200px;
+//   // background-position-y: 50px;
+//   // background-size: cover;
+// }
+
+.shape {
+  opacity: 0.5;
+  // position: absolute;
+  // right: 30vw;
+  // top: 1560px;
+  width: 773px;
+  height: 94px;
+  z-index: 1;
+}
+
+// <!-- Іспанія -------------->
+
+.spainBG {
+  background-image: url(img/spainBG.png);
+  background-size: cover;
+  background-position: center;
+}
+.padrow {
+  padding-top: 233px;
+  padding-bottom: 100px;
+  @include media-breakpoint-down(md) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+.p50 {
+  padding-top: 50px;
+}
+.p35 {
+  padding-top: 35px;
+}
+.pTB50 {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.spain_content {
+  background: rgba(0, 0, 0, 0.685);
+  font-size: 20px;
+  font-family: $fond-Josefin;
+  font-weight: 400;
+  color: rgb(232, 232, 232);
+  line-height: 1.3;
+  text-align: left;
+  padding-left: 40px;
+}
+
+.But_I_must_explain_to_you_how_all_this_mistaken {
+  font-size: 16px;
+  color: rgb(232, 232, 232);
+  line-height: 1.625;
+  text-align: left;
+  position: absolute;
+  left: 374.937px;
+  top: 2255.546px;
+  width: 478px;
+  height: 68px;
+  z-index: 32;
+}
+
+// <!-- Іспанія 2 -------------->
+.spainBG2 {
+  background-image: url(img/spainBG2.png);
+  background-size: cover;
+  background-position: center;
+}
+
+// <!-- Що кажуть туристи-------------->
+
+.sayBG {
+  background-image: url(img/what.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.tourist {
+  padding-bottom: 200px;
+}
+.What {
+  font-size: 36px;
+  font-family: $fond-Aleo;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+  line-height: 1;
+  text-align: center;
+  padding-top: 120px;
+  padding-bottom: 94px;
+}
+.SUMON {
+  background: #333333;
+  margin-left: -15px;
+  padding-left: 60px;
+  padding-top: 40px;
+}
+.sam {
+  font-size: 20px;
+  font-family: $fond-Josefin;
+  font-weight: 400;
+  color: rgb(254, 254, 254);
+  text-transform: uppercase;
+  line-height: 1.3;
+  text-align: left;
+}
+
+.But {
+  font-size: 16px;
+  color: rgb(254, 254, 254);
+  font-family: $fond-Josefin;
+  //   vertical-align: super;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.o {
+  font-size: 36px;
+  font-family: $fond-Josefin;
+  color: rgb(84, 116, 253);
+  vertical-align: super;
+  line-height: 0.722;
+  text-align: left;
+}
+
+// <!-- foooter ------------------->
+
+.foooterBG {
+  background: #000;
+}
+.fot {
+  padding-top: 80px;
+  line-height: 1.625;
+  text-align: center;
+}
+.Anywhere {
+  font-size: 16px;
+  font-family: $fond-Josefin;
+  color: rgb(255, 255, 255);
+  line-height: 1.625;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+
+.social {
+  text-align: center;
+  padding: 5px;
+  margin-bottom: 45px;
+}
+
+i {
+  font-size: 20px;
+  color: white;
+  line-height: 1.625;
+  padding: 5px;
+}
+
+i:hover {
+  color: #4d69e0;
+}

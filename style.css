@@ -4246,7 +4246,7 @@ html {
 
 input::-webkit-input-placeholder {
   font-size: 14px;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   color: rgba(153, 153, 153, 0.705);
   line-height: 1.857;
   text-align: center;
@@ -4256,7 +4256,7 @@ input::-webkit-input-placeholder {
 
 input:-ms-input-placeholder {
   font-size: 14px;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   color: rgba(153, 153, 153, 0.705);
   line-height: 1.857;
   text-align: center;
@@ -4266,7 +4266,7 @@ input:-ms-input-placeholder {
 
 input::-ms-input-placeholder {
   font-size: 14px;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   color: rgba(153, 153, 153, 0.705);
   line-height: 1.857;
   text-align: center;
@@ -4276,7 +4276,7 @@ input::-ms-input-placeholder {
 
 input::placeholder {
   font-size: 14px;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   color: rgba(153, 153, 153, 0.705);
   line-height: 1.857;
   text-align: center;
@@ -4286,7 +4286,7 @@ input::placeholder {
 
 .MIKEon {
   font-size: 48px;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   color: white;
   font-weight: 700;
   text-transform: uppercase;
@@ -4297,7 +4297,7 @@ input::placeholder {
 
 .MIKEon--middle {
   font-size: 24px;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   color: white;
   font-weight: bold;
   text-transform: uppercase;
@@ -4307,7 +4307,7 @@ input::placeholder {
 
 .Safe_Travel_Anywhere {
   font-size: 22px;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   color: white;
   line-height: 1;
   text-align: center;
@@ -4334,7 +4334,7 @@ input::placeholder {
 
 .button {
   font-size: 14px;
-  font-family: 'Aleo', serif;
+  font-family: "Aleo", serif;
   color: white;
   text-transform: uppercase;
   line-height: 1.7;
@@ -4369,7 +4369,7 @@ input::placeholder {
 
 .scroll_down__text {
   font-size: 14px;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   color: white;
   line-height: 1.857;
   text-align: center;
@@ -4398,7 +4398,6 @@ input::placeholder {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0;
 }
 
 .nav__list {
@@ -4411,7 +4410,7 @@ input::placeholder {
 
 .nav__link {
   font-size: 14px;
-  font-family: 'Aleo', serif;
+  font-family: "Aleo", serif;
   font-weight: 400;
   color: white;
   text-transform: uppercase;
@@ -4428,37 +4427,18 @@ li {
   background-image: url(img/ChooseBG.png);
   background-size: cover;
   background-position: center;
-  height: 70vh;
-  position: relative;
-}
-
-.NOpad {
-  padding: 0;
-}
-
-.backgroundIMG {
-  background-image: url(img/choose1.png);
-  width: 350px;
-  height: 220px;
-  background-repeat: no-repeat;
-  background-position-y: center;
-  background-position-x: right;
-  background-size: contain;
-  position: absolute;
-  top: 100px;
-  left: 0;
-  right: 0;
-  bottom: 180px;
-  z-index: 1;
 }
 
 .choose {
-  display: block;
   padding-top: 205px;
   padding-bottom: 133px;
-  float: left;
-  width: 48%;
-  z-index: 800;
+}
+
+@media (max-width: 991.98px) {
+  .choose {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
 }
 
 .choose__title {
@@ -4482,6 +4462,242 @@ li {
 
 .choose__sub_title--pad {
   padding-top: 37px;
-  padding-bottom: 50px;
+  padding-bottom: 25px;
+}
+
+.choose__img {
+  padding-top: 120px;
+  padding-left: 50px;
+}
+
+@media (max-width: 1199.98px) {
+  .choose__img {
+    padding-left: 0px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .choose__img {
+    padding-top: 0px;
+  }
+}
+
+.choose__img2 {
+  padding-left: 180px;
+}
+
+@media (max-width: 1199.98px) {
+  .choose__img2 {
+    padding-left: 20px;
+  }
+}
+
+.rectangle {
+  background: #333333;
+  color: white;
+}
+
+.rectangle__main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.rectangle_box {
+  text-align: center;
+  padding-top: 98px;
+  padding-bottom: 122px;
+}
+
+@media (max-width: 991.98px) {
+  .rectangle_box {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+
+.rectangle_box__img {
+  position: relative;
+  width: 58px;
+  height: 57px;
+  z-index: 5;
+}
+
+.rectangle_box__text {
+  font-size: 36px;
+  font-family: "Aleo", serif;
+  color: #e8e8e8;
+  line-height: 0.722;
+  text-align: center;
+  font-weight: 400;
+  padding-top: 32px;
+}
+
+.position {
+  position: relative;
+}
+
+.shape {
+  opacity: 0.5;
+  width: 773px;
+  height: 94px;
+  z-index: 1;
+}
+
+.spainBG {
+  background-image: url(img/spainBG.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.padrow {
+  padding-top: 233px;
+  padding-bottom: 100px;
+}
+
+@media (max-width: 991.98px) {
+  .padrow {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+
+.p50 {
+  padding-top: 50px;
+}
+
+.p35 {
+  padding-top: 35px;
+}
+
+.pTB50 {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.spain_content {
+  background: rgba(0, 0, 0, 0.685);
+  font-size: 20px;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  color: #e8e8e8;
+  line-height: 1.3;
+  text-align: left;
+  padding-left: 40px;
+}
+
+.But_I_must_explain_to_you_how_all_this_mistaken {
+  font-size: 16px;
+  color: #e8e8e8;
+  line-height: 1.625;
+  text-align: left;
+  position: absolute;
+  left: 374.937px;
+  top: 2255.546px;
+  width: 478px;
+  height: 68px;
+  z-index: 32;
+}
+
+.spainBG2 {
+  background-image: url(img/spainBG2.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.sayBG {
+  background-image: url(img/what.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.tourist {
+  padding-bottom: 200px;
+}
+
+.What {
+  font-size: 36px;
+  font-family: "Aleo", serif;
+  font-weight: 400;
+  color: white;
+  line-height: 1;
+  text-align: center;
+  padding-top: 120px;
+  padding-bottom: 94px;
+}
+
+.SUMON {
+  background: #333333;
+  margin-left: -15px;
+  padding-left: 60px;
+  padding-top: 40px;
+}
+
+.sam {
+  font-size: 20px;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  color: #fefefe;
+  text-transform: uppercase;
+  line-height: 1.3;
+  text-align: left;
+}
+
+.But {
+  font-size: 16px;
+  color: #fefefe;
+  font-family: "Josefin Sans", sans-serif;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.o {
+  font-size: 36px;
+  font-family: "Josefin Sans", sans-serif;
+  color: #5474fd;
+  vertical-align: super;
+  line-height: 0.722;
+  text-align: left;
+}
+
+.foooterBG {
+  background: #000;
+}
+
+.fot {
+  padding-top: 80px;
+  line-height: 1.625;
+  text-align: center;
+}
+
+.Anywhere {
+  font-size: 16px;
+  font-family: "Josefin Sans", sans-serif;
+  color: white;
+  line-height: 1.625;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+
+.social {
+  text-align: center;
+  padding: 5px;
+  margin-bottom: 45px;
+}
+
+i {
+  font-size: 20px;
+  color: white;
+  line-height: 1.625;
+  padding: 5px;
+}
+
+i:hover {
+  color: #4d69e0;
 }
 /*# sourceMappingURL=style.css.map */
